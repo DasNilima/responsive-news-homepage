@@ -1,4 +1,1 @@
-import './style.css'
-
-
-setupCounter(document.querySelector('#counter'))
+import './scss/style.scss';
