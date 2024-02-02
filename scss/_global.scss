@@ -1,0 +1,17 @@
+@use 'util' as u;
+
+:root {
+--colors-white: #FFFDFA;
+--colors-blue: #00001A;
+--colors-gray: #5E607A;
+--colors-red: #F15D51;
+--colors-silver: #C5C6CE;
+--colors-orange: #e9aa52;
+--font-xl: clamp(u.rem(40), 2.147887323943662rem + 1.5023474178403755vw, u.rem(56)); //40px, 56px
+--font-l: clamp(u.rem(32), 1.823943661971831rem + 0.7511737089201878vw, u.rem(40)); // 32px, 40px
+--font-s: u.rem(20);
+--font-m: u.rem(32);
+--font-xs: u.rem(18);
+--font-body: u.rem(15);
+}
+
