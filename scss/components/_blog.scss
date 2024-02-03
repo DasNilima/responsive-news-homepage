@@ -3,7 +3,6 @@
 .blog {
     display: grid;
     gap: u.rem(30);
-    
     // desktop layout
     @media (width >= u.em(1110)) {
         grid-template-columns: subgrid;
@@ -11,7 +10,6 @@
         padding-block-start: u.rem(30);
         
     }
-
     &__item {
         display: grid;
         grid-template-columns: u.rem(100) auto;
@@ -29,12 +27,15 @@
     }
     &__headline {
         align-self: center;
-    
+
         a {
             color: var(--color-blue);
             font-size: var(--font-xs);
             font-weight: 800;
             line-height: 1.1;
+            &:hover {
+                color: var(--color-red);
+            }
         }
     }
     &__description {
