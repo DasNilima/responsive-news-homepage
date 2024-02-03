@@ -1,6 +1,8 @@
 @use '../util/' as u;
 
 .feature {
+    display: grid;
+    gap: u.rem(24);
 
     &__image {
 
@@ -14,6 +16,7 @@
 
     }
     &__button {
+        justify-self: start;
         display: inline-block;
         background-color: var(--color-red);
         color: var(--color-white);
