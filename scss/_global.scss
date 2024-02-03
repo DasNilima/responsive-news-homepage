@@ -69,4 +69,10 @@ li {
 .grid {
     display: grid;
     gap: u.rem(64);
+
+    @media (width >= u.em(1110)) {     // desktop layout
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: u.rem(300) auto auto;
+    gap: u.rem(30);
+    }
 }
