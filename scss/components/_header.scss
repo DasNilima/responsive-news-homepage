@@ -1,9 +1,11 @@
 @use '../util/' as u;
 
 .header {
+    display: flex;  // mobile layout by default
+    justify-content: space-between;
+    padding-block: u.rem(30);
+
     @media (width >= u.rem(1110)) {   // desktop layout
-        display: flex;
-        justify-content: space-between;
         padding-block: u.rem(90) u.rem(55);
     }
 &__logo {
@@ -13,9 +15,12 @@
     }
 }
 &__links {
-    @media (width >= u.rem(1110)) {   // desktop layout
-        display: flex;
-        gap: u.rem(40);
+    display: flex;  // destop layout by default
+    gap: u.rem(40);
+
+    @media (width < u.rem(1110)) {   // mobile layout
+        flex-direction: column;
+        gap: u.rem(24);
     }
 }
 &__link {
